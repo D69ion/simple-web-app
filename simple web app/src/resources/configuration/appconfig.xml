@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<appconfig>
+    <rmi>
+        <server>
+            <registry>
+                <createregistry>yes</createregistry>
+                <registryaddress>127.0.0.1</registryaddress>
+                <registryport>1099</registryport>
+            </registry>
+        </server>
+        <client>
+            <policypath>src/resources/configuration/client.policy</policypath>
+            <usecodebaseonly>no</usecodebaseonly>
+        </client>
+        <classprovider>http://www.yourhost.free.ru/cp/cp.jar</classprovider>
+    </rmi>
+    <datasource>
+        <classname>com.mysql.cj.jdbc.MysqlDataSource</classname>
+        <drivertype>mysql</drivertype>
+        <hostname>localhost</hostname>
+        <port>3306</port>
+        <dbname>restaurant</dbname>
+        <user>root</user>
+        <pass/>
+    </datasource>
+</appconfig>
